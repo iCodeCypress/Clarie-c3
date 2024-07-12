@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+:root{
+    --Van-Dyke:#443632; 
+    --Wenge:#665953; 
+    --Cinerous:#897870; /* Font-Color */
+    --Khaki:#AE9E8F; /* Background */
+    --Bone:#EDE4D7; /* Secondary-Font-Color */
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Khaki);
+    font-family: "Varela Round";
+}
+
+.nav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vmin;
+    background-color: var(--Wenge);
+    box-shadow: 0 4px 2px 2px (0, 0, 0, 0);
+}
+
+.links-container{
+    width: 40vmin;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link{
+    text-decoration: none;
+    font-size: 3vmin;
+    font-weight: bold;
+    position: relative;
+    color: var(--Khaki);
+} 
+
+.link::after{
+    content: "";
+    background-color: var(--Khaki);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: 0.2s;
+}
+
+.link:hover,
+.link:focus{
+    color: var(--Bone);
+}
+
+.link:hover::after,
+.link:focus::after{
+    background-color: var(--Bone);
+    width: 100%;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-container{
+    display: flex;
+    align-items: center;
+    animation: fade_in 1s  ease-in;
+    margin: 2vmin;
+}
+
+.c3-logo{
+    width: 12vmin;
+    margin: 2vmin;
+}
+
+.title{
+    font-size: 12vmin;
+    letter-spacing: 1vmin;
+    color: var(--Bone);
+    margin: 1vmin;
+}
+
+.author-name{
+    font-size: 4vmin;
+    font-weight: bold;
+    color: var(--Bone);
+    animation: fade-in 1s ease-in;
+    margin: 2.5vmin;
+}
+
+.question-container{
+    margin: 5vmin;
+    border: var(--Bone) 3px solid;
+    border-radius: 20px;
+    padding-top: 2vmin;
+}
+
+.question-box{
+    margin: 0 3vmin 3vmin 3vmin;
+    width: 100vmin;
+}
+
+.question{
+    font-size: 4min;
+    color: var(--Bone);
+}
+
+.answer{
+    color: var(--Bone);
+    word-spacing: 10;
+    font-size: 2.5vmin;
+    margin: 1vmin;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 12vmin;
+    background-color: var(--Wenge);
+}
+
+h3{
+    font-size: 1vmin;
+}
+
+@keyframes fade_in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+.divider{
+    color: var(--Bone);
+    font-size: 5vmin;
+}
+
+.pfp{
+    margin: 3.5vmin;
+}
+
+.copy{
+    color: var(--Cinerous);
+    margin: 0.5vmin;
+}
+
+.divider-2{
+    color: var(--Bone);
+    margin: 1vmin;
+    font-size: 5vmin;
+}
+
+.maze-photo{
+    height: 10vmin;
+    width: 10vmin;
+    margin: 3.5vmin;
+}
+
+.project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chat-photo{
+    height: 15vmin;
+    width: 15vmin;
+    margin: 0.1vmin;
+}
+
+.pong-photo{
+    height: 10vmin;
+    width: 10vmin;
+    margin: 3.5vmin;
+}
+
+.project-description{
+    margin: 0.3vmin;
+    font-size: 2.5vmin;
+    letter-spacing: 1.5px;
+    color: var(--Bone   );
+}
+
+.project-title{
+    color: var(--Bone);
+    letter-spacing: 0.5vmin;
+}
+
+.insta{
+    width: 6vmin;
+    height: 6vmin;
+}
